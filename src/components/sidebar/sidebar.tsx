@@ -7,11 +7,13 @@ import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import ImageIcon from "@mui/icons-material/Image";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+import { MenuDrawer } from "../menu-drawer/menu-drawer";
 
 export function Sidebar() {
   return (
     <div className="sidebar">
-      <div>
+    <MenuDrawer/>
+     { /* <div>
         <Brand />
         <Divider/>
       </div>
@@ -37,7 +39,7 @@ export function Sidebar() {
       <Stack alignItems="flex-start" spacing={3} className="sidebar__stack">
         <NavItem text="Impressum" to="/imprint" />
         <NavItem disabled text="DSGVO" to="/dsgvo" />
-      </Stack>
+      </Stack> */}
     </div>
   );
 }
