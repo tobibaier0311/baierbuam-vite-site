@@ -1,5 +1,7 @@
 import React from "react";
+import { events } from "../../data/gigs";
+import { GigCard } from "./GigsCard";
 
 export function Gigs() {
-  return <div>HALLO GIOGS</div>;
+  return events.map((item) => <GigCard event={item.event} date={item.date} />);
 }
