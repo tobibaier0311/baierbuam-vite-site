@@ -28,6 +28,7 @@ export function NavItem({ isLarge, to, disabled, icon, text }: NavItemProps) {
       sx={location.pathname === to ? { color: "black" } : { color: "grey" }}
       startIcon={icon}
       onClick={handleClick}
+      className="Button"
     >
       <div
         className={

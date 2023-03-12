@@ -1,50 +1,46 @@
-import { Button, Drawer } from "@mui/material";
-import { Brand } from "../brand/Brand";
+import { Drawer, IconButton } from "@mui/material";
+import { Stack } from "@mui/system";
 import { NavItem } from "../nav-item/nav-item";
+import Icons from "../page-template/Icons";
+import SiteLinks from "../page-template/SiteLinks";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 
-import { CalendarMonthOutlined } from "@mui/icons-material";
-import InfoOutlined from "@mui/icons-material/InfoOutlined";
-import AlternateEmail from "@mui/icons-material/AlternateEmail";
-import Image from "@mui/icons-material/Image";
+import "./menu-drawer.css";
 import { useState } from "react";
-import "./Sidebar.css";
 
-export type MenuDrawerProps = {
-  open: boolean;
-};
+export const MenuDrawer = () => {
+  const [open, setOpen] = useState(false);
 
-const drawerWidth = 240;
+  const toggleDrawer = () => {
+    setOpen(!open);
+  };
 
-export const MenuDrawer = ({ open }: MenuDrawerProps) => {
+  console.log(open);
+
   return (
-    <>
-      <Drawer
-        sx={{
-          width: drawerWidth,
-          flexShrink: 0,
-          "& .MuiDrawer-paper": {
-            boxSizing: "border-box",
-          },
-        }}
-        variant="persistent"
-        open={open}
-      >
-        <Brand />
-        <NavItem isLarge text="Über uns" to="/" icon={<InfoOutlined />} />
-        <NavItem
-          isLarge
-          text="Termine"
-          to="/gigs"
-          icon={<CalendarMonthOutlined />}
-        />
-        <NavItem
-          isLarge
-          text="Kontakt"
-          to="/contact"
-          icon={<AlternateEmail />}
-        />
-        <NavItem isLarge text="Galerie" to="/images" icon={<Image />} />
-      </Drawer>
-    </>
+    <div className="iconDrawer">
+      <IconButton onClick={toggleDrawer} className="openButton">
+        <MenuIcon fontSize="large" />
+      </IconButton>
+      {open && (
+        <Drawer elevation={3} open={open} variant="persistent" anchor="right">
+          <IconButton onClick={toggleDrawer} className="closeButton">
+            <CloseIcon />
+          </IconButton>
+          <Stack
+            className="drawer"
+            direction="column"
+            justifyContent="space-evenly"
+            alignItems="center"
+          >
+            <NavItem isLarge text="Über uns" to="/" />
+            <NavItem isLarge text="Termine" to="/gigs" />
+            <NavItem isLarge text="Galerie" to="/images" />
+            <NavItem isLarge text="Kontakt" to="/contact" />
+          </Stack>
+        </Drawer>
+      )}
+    </div>
   );
 };

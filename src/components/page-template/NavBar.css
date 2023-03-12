@@ -1,1 +1,12 @@
+.Icon {
+  display: none;
+}
 
+@media (max-width: 950px) {
+  .Icon {
+    display: block;
+  }
+  .Links {
+    display: none;
+  }
+}

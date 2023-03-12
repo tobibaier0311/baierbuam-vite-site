@@ -9,3 +9,9 @@
   color: black;
   margin-left: 0.5rem;
 }
+
+@media (max-width: 950px) {
+  .Button {
+    display: none;
+  }
+}

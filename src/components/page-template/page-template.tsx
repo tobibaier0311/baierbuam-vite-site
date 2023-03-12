@@ -8,7 +8,6 @@ import React, { Children, useState } from "react";
 import { Outlet } from "react-router-dom";
 import { Brand } from "../brand/Brand";
 import { Home } from "../Home";
-import { MenuDrawer } from "../menu-drawer/menu-drawer";
 import { NavItem } from "../nav-item/nav-item";
 import Image from "@mui/icons-material/Image";
 
@@ -16,6 +15,7 @@ import "./page-template.css";
 import Icons from "./Icons";
 import SiteLinks from "./SiteLinks";
 import NavBar from "./NavBar";
+import { MenuDrawer } from "../menu-drawer/menu-drawer";
 
 export function PageTemplate() {
   return (
