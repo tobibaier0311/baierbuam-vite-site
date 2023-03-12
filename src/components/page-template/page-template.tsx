@@ -1,6 +1,6 @@
 import React, { Children } from "react";
 import { Outlet } from "react-router-dom";
-import { Home } from "../home/Home";
+import { Home } from "../Home";
 import { Sidebar } from "../sidebar/sidebar";
 
 import "./page-template.css";
