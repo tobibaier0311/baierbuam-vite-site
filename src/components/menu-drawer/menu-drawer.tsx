@@ -25,19 +25,39 @@ export const MenuDrawer = () => {
       </IconButton>
       {open && (
         <Drawer elevation={3} open={open} variant="persistent" anchor="right">
-          <IconButton onClick={toggleDrawer} className="closeButton">
-            <CloseIcon />
-          </IconButton>
           <Stack
             className="drawer"
             direction="column"
             justifyContent="space-evenly"
             alignItems="center"
           >
-            <NavItem isLarge text="Über uns" to="/" />
-            <NavItem isLarge text="Termine" to="/gigs" />
-            <NavItem isLarge text="Galerie" to="/images" />
-            <NavItem isLarge text="Kontakt" to="/contact" />
+            <IconButton onClick={toggleDrawer} className="closeButton">
+              <CloseIcon />
+            </IconButton>
+            <NavItem
+              handleClose={toggleDrawer}
+              isLarge
+              text="Über uns"
+              to="/"
+            />
+            <NavItem
+              handleClose={toggleDrawer}
+              isLarge
+              text="Termine"
+              to="/gigs"
+            />
+            <NavItem
+              handleClose={toggleDrawer}
+              isLarge
+              text="Galerie"
+              to="/images"
+            />
+            <NavItem
+              handleClose={toggleDrawer}
+              isLarge
+              text="Kontakt"
+              to="/contact"
+            />
           </Stack>
         </Drawer>
       )}
