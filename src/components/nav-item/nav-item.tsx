@@ -5,15 +5,14 @@ import { useNavigate, useLocation } from "react-router-dom";
 import "./nav-item.css";
 
 export type NavItemProps = {
-  isLarge?: boolean
-  to: string
-  disabled?: boolean
-  icon?: React.ReactNode
-  text: string
-}
+  isLarge?: boolean;
+  to: string;
+  disabled?: boolean;
+  icon?: React.ReactNode;
+  text: string;
+};
 
 export function NavItem({ isLarge, to, disabled, icon, text }: NavItemProps) {
-  
   const navigate = useNavigate();
   const location = useLocation();
 
