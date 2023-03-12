@@ -1,9 +1,9 @@
-import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Contact } from "./components/contact/Contact";
 import { ErrorPage } from "./components/error-page";
 import { Gigs } from "./components/gigs/Gigs";
 import { Home } from "./components/Home";
+import { Images } from "./components/ImagePage/images";
 import { PageTemplate } from "./components/page-template/page-template";
 
 const routes = [
@@ -23,6 +23,10 @@ const routes = [
       {
         path: "contact",
         element: <Contact />,
+      },
+      {
+        path: "images",
+        element: <Images />,
       },
     ],
   },

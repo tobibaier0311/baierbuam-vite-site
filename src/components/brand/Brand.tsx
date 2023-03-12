@@ -5,7 +5,5 @@ import "./brand.css";
 import { Avatar } from "@mui/material";
 
 export function Brand() {
-  return (
-    <Avatar src={Logo} sx={{ width: "17rem", height: "17rem" }}/>
-  );
+  return <Avatar src={Logo} sx={{ width: "10rem", height: "10rem" }} />;
 }

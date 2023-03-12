@@ -1,9 +1,9 @@
-import React from "react";
+import { Container } from "@mui/material";
 
 export function Home() {
   return (
-    <div className="Home">
-      <h1 className="text-3xl font-bold underline text-center">Ein Prosit</h1>
-    </div>
+    <Container>
+      <h1>Ein Prosit! 🍻</h1>
+    </Container>
   );
 }
