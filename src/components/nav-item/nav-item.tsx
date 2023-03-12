@@ -10,9 +10,17 @@ export type NavItemProps = {
   disabled?: boolean;
   icon?: React.ReactNode;
   text: string;
+  handleClose?: () => void;
 };
 
-export function NavItem({ isLarge, to, disabled, icon, text }: NavItemProps) {
+export function NavItem({
+  isLarge,
+  to,
+  disabled,
+  icon,
+  text,
+  handleClose,
+}: NavItemProps) {
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -20,6 +28,7 @@ export function NavItem({ isLarge, to, disabled, icon, text }: NavItemProps) {
     if (to) {
       navigate(to);
     }
+    if (handleClose) handleClose();
   };
 
   return (
