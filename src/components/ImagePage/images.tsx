@@ -1,51 +1,30 @@
 import { Container, ImageList, ImageListItem } from "@mui/material";
+import Bild1 from "../../assets/1.jpg";
+import Bild2 from "../../assets/2.jpg";
+import Bild3 from "../../assets/3.jpg";
+import Bild4 from "../../assets/4.jpg";
+import Bild5 from "../../assets/5.jpg";
+import Bild6 from "../../assets/6.jpg";
+import Bild7 from "../../assets/7.jpg";
+import Bild8 from "../../assets/8.jpg";
+import Bild9 from "../../assets/9.jpg";
+import Bild10 from "../../assets/10.jpg";
+import Bild11 from "../../assets/11.jpg";
+import Bild12 from "../../assets/12.jpg";
 
 const itemData = [
-  {
-    img: "src/assets/IMG_0436.JPG",
-  },
-  {
-    img: "src/assets/IMG_0439.JPG",
-  },
-  {
-    img: "src/assets/IMG_0440.JPG",
-  },
-  {
-    img: "src/assets/IMG_0441.JPG",
-  },
-  {
-    img: "src/assets/IMG_0458.JPG",
-  },
-  {
-    img: "src/assets/IMG_0459.JPG",
-  },
-  {
-    img: "src/assets/IMG_0460.JPG",
-  },
-  {
-    img: "src/assets/IMG_0463.JPG",
-  },
-  {
-    img: "src/assets/IMG_0464.JPG",
-  },
-  {
-    img: "src/assets/IMG_0465.JPG",
-  },
-  {
-    img: "src/assets/IMG_0466.JPG",
-  },
-  {
-    img: "src/assets/IMG_0467.JPG",
-  },
-  {
-    img: "src/assets/IMG-20230217-WA0004.jpg",
-  },
-  {
-    img: "src/assets/IMG-20230217-WA0007.jpg",
-  },
-  {
-    img: "src/assets/IMG-20230217-WA0013.jpg",
-  },
+  Bild1,
+  Bild2,
+  Bild3,
+  Bild4,
+  Bild5,
+  Bild6,
+  Bild7,
+  Bild8,
+  Bild9,
+  Bild10,
+  Bild11,
+  Bild12,
 ];
 
 export function Images() {
@@ -54,10 +33,10 @@ export function Images() {
       <h1>Galerie 📷</h1>
       <ImageList cols={3} rowHeight={328}>
         {itemData.map((item) => (
-          <ImageListItem key={item.img}>
+          <ImageListItem key={item}>
             <img
-              src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-              srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+              src={`${item}?w=164&h=164&fit=crop&auto=format`}
+              srcSet={`${item}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
               loading="lazy"
             />
           </ImageListItem>
