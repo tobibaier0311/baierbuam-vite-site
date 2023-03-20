@@ -1,0 +1,11 @@
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  margin: 0 20rem;
+}
+
+.form {
+  width: 40vw;
+}
