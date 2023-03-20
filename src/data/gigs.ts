@@ -8,17 +8,6 @@
 
 export const events = [
   {
-    event: "Familiengottesdienst Neustift",
-    date: "So, 19.02.2023",
-    description:
-      "Familiengottesdienst mit rhythmischer Begleitung der Baierbuam & Friends in der Kirche Neustift",
-  },
-  {
-    event: "Starkbierfest Schalding r.d.D.",
-    date: "Sa, 18.03.2023",
-    description: "",
-  },
-  {
     event: "SV Schalding Heining gegen Landsberg",
     date: "Sa, 08.04.2023",
     description:
@@ -40,6 +29,11 @@ export const events = [
     date: "Sa, 27.05.2023",
     description:
       "Musikalische Unterstützung für den SVS vor und nach dem Spiel",
+  },
+  {
+    event: "100 Jahre Imkerverein Heining",
+    date: "18.06.2023",
+    description: "",
   },
   {
     event: "Vereinsmeisterschaft EC Passau-Neustift",
