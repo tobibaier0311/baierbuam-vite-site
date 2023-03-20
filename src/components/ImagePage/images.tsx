@@ -30,7 +30,7 @@ const itemData = [
 export function Images() {
   return (
     <Container>
-      <h1>Galerie 📷</h1>
+      <h1>Galerie</h1>
       <ImageList cols={3} rowHeight={328}>
         {itemData.map((item) => (
           <ImageListItem key={item}>
