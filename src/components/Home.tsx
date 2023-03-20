@@ -1,4 +1,5 @@
 import { Container } from "@mui/material";
+import Bild1 from "../assets/bbaf.jpeg";
 
 export function Home() {
   return (
@@ -27,7 +28,7 @@ export function Home() {
         </p>
       </section>
       <section>
-        <img src="src/assets/bbaf.jpeg" />
+        <img src={Bild1} />
       </section>
     </Container>
   );
