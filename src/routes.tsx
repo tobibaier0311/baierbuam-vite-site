@@ -3,8 +3,10 @@ import { Contact } from "./components/contact/Contact";
 import { ErrorPage } from "./components/error-page";
 import { Gigs } from "./components/gigs/Gigs";
 import { Home } from "./components/Home";
+import Gallery from "./components/ImagePage/Gallery";
 import { Images } from "./components/ImagePage/images";
 import { PageTemplate } from "./components/page-template/page-template";
+import { images } from "./data/images";
 
 const routes = [
   {
