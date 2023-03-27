@@ -8,7 +8,7 @@ export default function About() {
   return (
     <Card className="card" variant="outlined">
       <CardContent>
-        <h1>Rock meets Blasmusik.</h1>
+        <h1>Rock meets Blasmusik!</h1>
       </CardContent>
       <div className="stack">
         <img
