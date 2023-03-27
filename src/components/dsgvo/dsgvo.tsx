@@ -24,7 +24,7 @@ export const DSGVO = () => {
           Ausf&uuml;hrliche Informationen zum Thema Datenschutz entnehmen Sie
           unserer unter diesem Text aufgef&uuml;hrten Datenschutzerkl&auml;rung.
         </p>
-        <h3>Datenerfassung auf dieser Website</h3>{" "}
+        <h3>Datenerfassung auf dieser Website:</h3>{" "}
         <h4>
           Wer ist verantwortlich f&uuml;r die Datenerfassung auf dieser Website?
         </h4>{" "}
