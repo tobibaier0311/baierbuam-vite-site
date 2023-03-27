@@ -1,4 +1,4 @@
-import { IconButton, Stack } from "@mui/material";
+import { Stack } from "@mui/material";
 import React from "react";
 import Icons from "./Icons";
 import SiteLinks from "./SiteLinks";
@@ -11,12 +11,7 @@ import { MenuDrawer } from "../menu-drawer/menu-drawer";
 export default function NavBar() {
   return (
     <div className="NavBar">
-      <Stack
-        direction="row"
-        justifyContent="space-between"
-        alignItems="center"
-        sx={{ margin: "0 3rem" }}
-      >
+      <Stack direction="row" justifyContent="space-between" alignItems="center">
         <Brand />
         <div className="Links">
           <SiteLinks />
