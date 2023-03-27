@@ -1,5 +1,4 @@
-import { Container, Typography } from "@mui/material";
-import Bild1 from "../assets/bbaf.jpeg";
+import { Container } from "@mui/material";
 import "./Home.css";
 import About from "./home/About";
 
