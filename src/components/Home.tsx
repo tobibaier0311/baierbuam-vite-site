@@ -1,34 +1,30 @@
-import { Container } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 import Bild1 from "../assets/bbaf.jpeg";
+import "./Home.css";
 
 export function Home() {
   return (
     <Container>
-      <h1>Servus!</h1>
+      <article className="article">
+        <img className="image" src={Bild1} />
+        <h1 className="headline">Rock meets Blasmusik.</h1>
+      </article>
       <section>
         <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-          takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-          amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-          invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-          kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-          amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
-          esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
-          at vero eros et accumsan et iusto odio dignissim qui blandit praesent
-          luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-          Lorem ipsum dolor sit amet,
+          Wir, die "Baierbuam And Friends" sind eine Gruppe ambitionierter
+          Hobby-Musiker, welche im Gründungsjahr 2018 noch aus 6 Mitgliedern
+          bestand. Diese Zahl ist bis heute im Jahr 2023 auf ganze 13 gestiegen.
+          Stets mit dem Motto "Rock meets Blasmusik" treten wir auf
+          verschiedenen Veranstaltungen im Raum Passau auf. Von kleineren
+          Auftritten an Geburtstagen bestimmter "Ehrenfans", über musikalische
+          Begleitung verschiedener Dorffeste wie zum Beispiel dem Starkbierfest
+          in Schalding, bis hin zur Unterstützung der 1. Fußballmannschaft des
+          SV Schalding Heining ist alles dabei. Unsere aktuelle Besetzung sind 5
+          Trompeten, 4 Posaunen, 1 Klarinette, 1 E-Gitarre, 1 E-Bass und 1
+          Schlagzeug. Unser Repertoire zeichnet sich durch ein sehr breites
+          Spektrum aus. Enthalten sind natürlich bestimmte All Time Hits wie
+          "Sweet Caroline" oder "Highway to Hell".
         </p>
-      </section>
-      <section>
-        <img src={Bild1} />
       </section>
     </Container>
   );

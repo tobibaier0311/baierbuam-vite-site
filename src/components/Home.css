@@ -1,0 +1,13 @@
+.article {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  width: 650px;
+}
+
+.headline {
+}
