@@ -8,7 +8,7 @@ import { Images } from "./components/ImagePage/images";
 import { PageTemplate } from "./components/page-template/page-template";
 import { images } from "./data/images";
 import Bild from "./assets/bbaf.jpeg";
-import Bild1 from "./assets/Gruppenfoto.png";
+import Bild1 from "./assets/image3.jpeg";
 import Bild2 from "./assets/image3.jpg";
 
 const routes = [
