@@ -1,5 +1,14 @@
+.NavBar {
+  border-bottom: 2px solid lightgrey;
+  padding-bottom: 10px;
+}
 .Icon {
   display: none;
+}
+.Links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 @media (max-width: 950px) {

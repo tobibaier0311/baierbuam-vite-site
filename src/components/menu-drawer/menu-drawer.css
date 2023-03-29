@@ -8,6 +8,11 @@
   right: -250px;
 }
 
+.burger {
+  top: 8px;
+  right: 8px;
+}
+
 .iconDrawer {
   display: flex;
   flex-direction: row;
@@ -16,11 +21,6 @@
   height: 100%;
   top: 10px;
   right: 0px;
-}
-
-.openButton {
-  top: 40px;
-  right: 40px;
 }
 
 .closeButton {
