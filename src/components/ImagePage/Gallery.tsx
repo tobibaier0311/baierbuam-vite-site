@@ -37,13 +37,8 @@ export default function Gallery({ images }: GalleryProps) {
           <img width="512px" src={image} alt={image} loading="lazy" />
         </div>
       ))}
-      <Modal open={open}>
-        <div className="modal">
-          <img src={source} alt={source} />
-          <IconButton onClick={() => closeModal()}>
-            <CloseIcon />
-          </IconButton>
-        </div>
+      <Modal open={open} onClose={() => closeModal()}>
+        <img className="modal" src={source} alt={source} width="65%" />
       </Modal>
     </div>
   );
