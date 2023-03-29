@@ -1,34 +1,26 @@
+import { Grid } from "@mui/material";
+import { Container } from "@mui/system";
 import React from "react";
-import { Box } from "@mui/material";
 
-interface GalleryProps {
+type GalleryProps = {
   images: string[];
-}
+};
 
-function Gallery({ images }: GalleryProps) {
+export default function Gallery({ images }: GalleryProps) {
   return (
-    <Box
-      display="flex"
-      flexWrap="wrap"
-      justifyContent="center"
-      sx={{ gap: "10px" }}
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        flexWrap: "wrap",
+        flexDirection: "row",
+      }}
     >
       {images.map((image, index) => (
-        <img
-          key={index}
-          src={image}
-          alt={`Image ${index}`}
-          style={{
-            width: "200px",
-            height: "200px",
-            objectFit: "cover",
-            boxShadow: "2px 2px 5px #888888",
-            borderRadius: "5px",
-          }}
-        />
+        <div style={{ margin: "20px" }}>
+          <img src={image} alt={image} />
+        </div>
       ))}
-    </Box>
+    </div>
   );
 }
-
-export default Gallery;

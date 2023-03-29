@@ -7,6 +7,9 @@ import Gallery from "./components/ImagePage/Gallery";
 import { Images } from "./components/ImagePage/images";
 import { PageTemplate } from "./components/page-template/page-template";
 import { images } from "./data/images";
+import Bild from "./assets/bbaf.jpeg";
+import Bild1 from "./assets/Gruppenfoto.png";
+import Bild2 from "./assets/image3.jpg";
 
 const routes = [
   {
@@ -28,7 +31,11 @@ const routes = [
       },
       {
         path: "images",
-        element: <Images />,
+        element: (
+          <Gallery
+            images={[Bild1, Bild1, Bild1, Bild1, Bild1, Bild1, Bild1, Bild1]}
+          />
+        ),
       },
     ],
   },
