@@ -10,10 +10,6 @@
   flex-direction: row;
 }
 
-.image {
-  width: 100%;
-}
-
 @media (max-width: 1024px) {
   .stack {
     flex-direction: column;
