@@ -1,12 +1,4 @@
-import {
-  Button,
-  Container,
-  Divider,
-  Grid,
-  InputLabel,
-  Stack,
-  TextField,
-} from "@mui/material";
+import { Button, Container, Grid, TextField } from "@mui/material";
 import React, { useState } from "react";
 import { send } from "emailjs-com";
 
