@@ -29,14 +29,7 @@ export function Contact() {
   return (
     <Container className="container">
       <h1>Kontakt</h1>
-      <Grid container justifyContent="space-evenly">
-        <Grid item lg={6} xs={12}>
-          <h2>Telefon/Email</h2>
-          <div>
-            <h3>📞 0160 7790533</h3>
-            <h3>✉️ baierbuamandfriends@web.de</h3>
-          </div>
-        </Grid>
+      <Grid container spacing={12}>
         <Grid item lg={6} xs={12}>
           <h2>Kontaktformular</h2>
           <form onSubmit={onSubmit} className="form">
@@ -114,6 +107,13 @@ export function Contact() {
               </Grid>
             </Grid>
           </form>
+        </Grid>
+        <Grid item lg={6} xs={12}>
+          <h2>Telefon/Email</h2>
+          <div>
+            <h3>📞 0160 7790533</h3>
+            <h3>✉️ baierbuamandfriends@web.de</h3>
+          </div>
         </Grid>
       </Grid>
     </Container>
