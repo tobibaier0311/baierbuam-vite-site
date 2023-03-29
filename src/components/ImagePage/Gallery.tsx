@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { IconButton, Modal } from "@mui/material";
-import { Box } from "@mui/system";
 import CloseIcon from "@mui/icons-material/Close";
 import "./Gallery.css";
 
@@ -35,7 +34,7 @@ export default function Gallery({ images }: GalleryProps) {
           style={{ margin: "20px", cursor: "pointer" }}
           onClick={() => triggerModal(image)}
         >
-          <img src={image} alt={image} />
+          <img width="512px" src={image} alt={image} loading="lazy" />
         </div>
       ))}
       <Modal open={open}>

@@ -7,9 +7,21 @@ import Gallery from "./components/ImagePage/Gallery";
 import { Images } from "./components/ImagePage/images";
 import { PageTemplate } from "./components/page-template/page-template";
 import { images } from "./data/images";
-import Bild from "./assets/bbaf.jpeg";
-import Bild1 from "./assets/image3.jpeg";
-import Bild2 from "./assets/image3.jpg";
+//import Bild0 from "./assets/Gruppenfoto.png";
+//import Bild1 from "./assets/bbaf.jpeg";
+//import Bild2 from "./assets/image3.jpeg";
+import Bild3 from "./assets/img-1.jpg";
+import Bild4 from "./assets/img-2.jpg";
+import Bild5 from "./assets/img-3.jpg";
+import Bild6 from "./assets/img-4.jpg";
+import Bild7 from "./assets/img-5.jpg";
+import Bild8 from "./assets/img-6.jpg";
+import Bild9 from "./assets/img-7.jpg";
+import Bild10 from "./assets/img-8.jpg";
+import Bild11 from "./assets/img-9.jpg";
+import Bild12 from "./assets/img-10.jpg";
+import Bild13 from "./assets/img-11.jpg";
+import Bild14 from "./assets/img-12.jpg";
 
 const routes = [
   {
@@ -33,7 +45,20 @@ const routes = [
         path: "images",
         element: (
           <Gallery
-            images={[Bild1, Bild1, Bild1, Bild1, Bild1, Bild1, Bild1, Bild1]}
+            images={[
+              Bild3,
+              Bild4,
+              Bild5,
+              Bild6,
+              Bild7,
+              Bild8,
+              Bild9,
+              Bild10,
+              Bild11,
+              Bild12,
+              Bild13,
+              Bild14,
+            ]}
           />
         ),
       },
