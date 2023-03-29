@@ -32,7 +32,7 @@ export const events = [
   },
   {
     event: "100 Jahre Imkerverein Heining",
-    date: "18.06.2023",
+    date: "So, 18.06.2023",
     description: "",
   },
   {
