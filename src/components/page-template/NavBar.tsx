@@ -11,12 +11,11 @@ import { MenuDrawer } from "../menu-drawer/menu-drawer";
 export default function NavBar() {
   return (
     <div className="NavBar">
-      <Stack direction="row" justifyContent="space-between" alignItems="center">
+      <Stack direction="row" alignItems="center" justifyContent="space-around">
         <Brand />
         <div className="Links">
           <SiteLinks />
         </div>
-        <Icons />
         <div className="Icon">
           <MenuDrawer />
         </div>

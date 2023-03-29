@@ -34,17 +34,20 @@ export function NavItem({
   return (
     <Button
       disabled={disabled}
-      sx={location.pathname === to ? { color: "black" } : { color: "grey" }}
+      sx={location.pathname === to ? { color: "#003d6f" } : { color: "grey" }}
       startIcon={icon}
       onClick={handleClick}
       className="Button"
+      variant="text"
+      disableRipple
+      disableFocusRipple
     >
       <div
         className={
           location.pathname === to ? "buttonTextClicked" : "buttonText"
         }
       >
-        <Typography variant={isLarge ? "h6" : "body1"}>{text}</Typography>
+        <h3>{text}</h3>
       </div>
     </Button>
   );

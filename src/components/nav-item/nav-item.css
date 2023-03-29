@@ -1,13 +1,15 @@
+.Button {
+  background-color: transparent;
+}
+
 .buttonText {
   text-transform: none;
   color: grey;
-  margin-left: 0.5rem;
 }
 
 .buttonTextClicked {
   text-transform: none;
-  color: black;
-  margin-left: 0.5rem;
+  color: #003d6f;
 }
 
 @media (max-width: 950px) {

@@ -1,10 +1,11 @@
-import { Drawer, IconButton } from "@mui/material";
+import { Drawer, IconButton, Tooltip } from "@mui/material";
 import { Stack } from "@mui/system";
 import { NavItem } from "../nav-item/nav-item";
-import Icons from "../page-template/Icons";
-import SiteLinks from "../page-template/SiteLinks";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import YouTubeIcon from "@mui/icons-material/YouTube";
 
 import "./menu-drawer.css";
 import { useState } from "react";
@@ -16,11 +17,9 @@ export const MenuDrawer = () => {
     setOpen(!open);
   };
 
-  console.log(open);
-
   return (
     <div className="iconDrawer">
-      <IconButton onClick={toggleDrawer} className="openButton">
+      <IconButton onClick={toggleDrawer} className="burger">
         <MenuIcon fontSize="large" />
       </IconButton>
       {open && (
@@ -58,6 +57,21 @@ export const MenuDrawer = () => {
               text="Kontakt"
               to="/contact"
             />
+            <Tooltip title="Instagram">
+              <IconButton href="https://www.instagram.com/baierbuamandfriends">
+                <InstagramIcon fontSize="medium" />
+              </IconButton>
+            </Tooltip>
+            <Tooltip title="Facebook">
+              <IconButton href="https://www.facebook.com/baierbuamandfriends">
+                <FacebookIcon fontSize="medium" />
+              </IconButton>
+            </Tooltip>
+            <Tooltip title="Youtube">
+              <IconButton>
+                <YouTubeIcon fontSize="medium" />
+              </IconButton>
+            </Tooltip>
           </Stack>
         </Drawer>
       )}
