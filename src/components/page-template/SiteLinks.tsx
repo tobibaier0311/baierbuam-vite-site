@@ -23,17 +23,17 @@ export default function SiteLinks() {
         <NavItem text="Kontakt" to="/contact" />
         <Tooltip title="Instagram">
           <IconButton href="https://www.instagram.com/baierbuamandfriends">
-            <InstagramIcon fontSize="medium" />
+            <InstagramIcon className="IconButton" fontSize="medium" />
           </IconButton>
         </Tooltip>
         <Tooltip title="Facebook">
           <IconButton href="https://www.facebook.com/baierbuamandfriends">
-            <FacebookIcon fontSize="medium" />
+            <FacebookIcon className="IconButton" fontSize="medium" />
           </IconButton>
         </Tooltip>
         <Tooltip title="Youtube">
           <IconButton>
-            <YouTubeIcon fontSize="medium" />
+            <YouTubeIcon className="IconButton" fontSize="medium" />
           </IconButton>
         </Tooltip>
       </Stack>
