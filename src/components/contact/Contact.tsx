@@ -13,7 +13,12 @@ export function Contact() {
 
   const onSubmit = (e: any) => {
     e.preventDefault();
-    send("service_3dx1rzk", "template_0cmj5m5", toSend, "ah7IwFpD82EJ_SCzx")
+    send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      toSend,
+      import.meta.env.VITE_EMAILJS_USER_ID
+    )
       .then((response) => {
         return alert("Anfrage wurde erfolgreich gesendet, Danke!");
       })

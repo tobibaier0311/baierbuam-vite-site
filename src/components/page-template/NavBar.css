@@ -1,5 +1,6 @@
 .NavBar {
   padding-bottom: 10px;
+  position: sticky;
 }
 .Icon {
   display: none;
