@@ -1,5 +1,5 @@
 import React from "react";
-import { IconButton, Stack, Tooltip } from "@mui/material";
+import { Stack } from "@mui/material";
 
 import "./Icons.css";
 
