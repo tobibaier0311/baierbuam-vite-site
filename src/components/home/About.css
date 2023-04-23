@@ -1,20 +1,17 @@
-.card {
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-  align-items: center;
-}
-
 .stack {
   display: flex;
   flex-direction: row;
+}
+
+.title {
+  font-weight: bolder;
 }
 
 @media (max-width: 1024px) {
   .stack {
     flex-direction: column;
   }
-  .image {
+  .image1 {
     width: 90vw;
   }
 }
