@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { IconButton, Modal } from "@mui/material";
-import CloseIcon from "@mui/icons-material/Close";
+import { Modal } from "@mui/material";
 import "./Gallery.css";
 
 type GalleryProps = {
@@ -29,7 +28,7 @@ export default function Gallery({ images }: GalleryProps) {
         flexDirection: "row",
       }}
     >
-      {images.map((image, index) => (
+      {images.map((image) => (
         <div
           style={{ margin: "20px", cursor: "pointer" }}
           onClick={() => triggerModal(image)}

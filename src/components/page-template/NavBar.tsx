@@ -1,6 +1,5 @@
 import { Stack } from "@mui/material";
 import React from "react";
-import Icons from "./Icons";
 import SiteLinks from "./SiteLinks";
 
 import { Brand } from "../brand/Brand";

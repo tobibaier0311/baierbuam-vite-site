@@ -1,4 +1,4 @@
-import { Button, Typography } from "@mui/material";
+import { Button } from "@mui/material";
 import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
@@ -14,7 +14,6 @@ export type NavItemProps = {
 };
 
 export function NavItem({
-  isLarge,
   to,
   disabled,
   icon,

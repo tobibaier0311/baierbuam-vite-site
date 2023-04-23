@@ -1,4 +1,4 @@
-import { Card, CardContent, Grid } from "@mui/material";
+import { Card, Grid } from "@mui/material";
 import "./GigsCard.css";
 
 export type CardProps = {
