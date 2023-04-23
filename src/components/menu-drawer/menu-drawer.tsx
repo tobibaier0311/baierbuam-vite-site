@@ -33,11 +33,12 @@ export const MenuDrawer = () => {
             <IconButton onClick={toggleDrawer} className="closeButton">
               <CloseIcon />
             </IconButton>
+            <NavItem handleClose={toggleDrawer} isLarge text="Home" to="/" />
             <NavItem
               handleClose={toggleDrawer}
               isLarge
               text="Über uns"
-              to="/"
+              to="/about"
             />
             <NavItem
               handleClose={toggleDrawer}
