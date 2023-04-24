@@ -1,6 +1,7 @@
-import { Button, Container, Grid, TextField } from "@mui/material";
+import { Button, Container, Divider, Grid, TextField } from "@mui/material";
 import React, { useState } from "react";
 import { send } from "emailjs-com";
+import "./Contact.css";
 
 export function Contact() {
   const [toSend, setToSend] = useState({
@@ -34,16 +35,17 @@ export function Contact() {
   return (
     <Container className="container">
       <h1>Kontakt</h1>
-      <Grid container spacing={12}>
+      <Divider />
+      <Grid className="grid" container spacing={12}>
         <Grid item lg={6} xs={12}>
           <h2>Kontaktformular</h2>
           <form onSubmit={onSubmit} className="form">
-            <Grid container spacing={3}>
+            <Grid container spacing={4}>
               <Grid item xs={12} md={6}>
                 <TextField
                   label="Vorname"
                   size="small"
-                  variant="filled"
+                  variant="outlined"
                   required
                   fullWidth
                   type="text"
@@ -56,7 +58,7 @@ export function Contact() {
                 <TextField
                   label="Nachname"
                   size="small"
-                  variant="filled"
+                  variant="outlined"
                   required
                   fullWidth
                   type="text"
@@ -69,7 +71,7 @@ export function Contact() {
                 <TextField
                   label="Ihre Email"
                   size="small"
-                  variant="filled"
+                  variant="outlined"
                   required
                   fullWidth
                   type="text"
@@ -82,7 +84,7 @@ export function Contact() {
                 <TextField
                   label="Tel. Nummer (optional)"
                   size="small"
-                  variant="filled"
+                  variant="outlined"
                   fullWidth
                   type="text"
                   name="phone"
@@ -94,7 +96,7 @@ export function Contact() {
                 <TextField
                   label="Ihr Anliegen"
                   size="small"
-                  variant="filled"
+                  variant="outlined"
                   required
                   fullWidth
                   type="text"

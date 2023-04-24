@@ -1,11 +1,13 @@
 import React from "react";
-import { Card, CardContent, Container } from "@mui/material";
+import { Card, CardContent, Container, Divider } from "@mui/material";
 import Gruppe from "../../assets/image3.jpeg";
 import "./About.css";
 
 export default function About() {
   return (
     <Container>
+      <h1>Über uns</h1>
+      <Divider />
       <Card
         className="card"
         variant="outlined"

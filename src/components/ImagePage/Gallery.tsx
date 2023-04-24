@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Modal } from "@mui/material";
+import { Container, Divider, Modal } from "@mui/material";
 import "./Gallery.css";
 
 type GalleryProps = {
@@ -20,25 +20,29 @@ export default function Gallery({ images }: GalleryProps) {
   };
 
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        flexWrap: "wrap",
-        flexDirection: "row",
-      }}
-    >
-      {images.map((image) => (
-        <div
-          style={{ margin: "20px", cursor: "pointer" }}
-          onClick={() => triggerModal(image)}
-        >
-          <img width="512px" src={image} alt={image} />
-        </div>
-      ))}
-      <Modal open={open} onClose={() => closeModal()}>
-        <img className="modal" src={source} alt={source} width="65%" />
-      </Modal>
-    </div>
+    <Container>
+      <h1>Galerie</h1>
+      <Divider />
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          flexWrap: "wrap",
+          flexDirection: "row",
+        }}
+      >
+        {images.map((image) => (
+          <div
+            style={{ margin: "20px", cursor: "pointer" }}
+            onClick={() => triggerModal(image)}
+          >
+            <img width="512px" src={image} alt={image} />
+          </div>
+        ))}
+        <Modal open={open} onClose={() => closeModal()}>
+          <img className="modal" src={source} alt={source} width="65%" />
+        </Modal>
+      </div>
+    </Container>
   );
 }

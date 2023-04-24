@@ -4,12 +4,24 @@ import { Outlet } from "react-router-dom";
 
 import "./page-template.css";
 import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 export function PageTemplate() {
   return (
-    <Box sx={{ display: "flex", flexDirection: "column" }}>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        height: "100%",
+      }}
+    >
       <NavBar />
-      <Outlet />
+      <div className="outlet">
+        <Outlet />
+      </div>
+
+      <Footer />
     </Box>
   );
 }

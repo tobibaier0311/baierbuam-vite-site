@@ -1,4 +1,4 @@
-import { Container } from "@mui/material";
+import { Container, Divider } from "@mui/material";
 import { events } from "../../data/gigs";
 import { GigCard } from "./GigsCard";
 import { motion } from "framer-motion";
@@ -7,6 +7,7 @@ export function Gigs() {
   return (
     <Container className="GigPage">
       <h1>Termine 🗓️</h1>
+      <Divider />
       <div className="cards">
         {events.map((item, i) => (
           <motion.div
