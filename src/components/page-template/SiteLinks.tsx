@@ -32,11 +32,11 @@ export default function SiteLinks() {
             <FacebookIcon className="IconButton" fontSize="medium" />
           </IconButton>
         </Tooltip>
-        <Tooltip title="Youtube">
+        {/*<Tooltip title="Youtube">
           <IconButton>
             <YouTubeIcon className="IconButton" fontSize="medium" />
           </IconButton>
-        </Tooltip>
+        </Tooltip>*/}
       </Stack>
     </div>
   );
