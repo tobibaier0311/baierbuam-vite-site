@@ -1,4 +1,4 @@
-import { Container } from "@mui/material";
+import { Container, Divider } from "@mui/material";
 import { Link } from "react-router-dom";
 import "./Home.css";
 
