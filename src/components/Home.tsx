@@ -1,5 +1,4 @@
-import { Container, Divider } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Container } from "@mui/material";
 import "./Home.css";
 
 import { motion } from "framer-motion";
@@ -37,9 +36,6 @@ export function Home() {
           />
         </div>
       </div>
-      <h2>
-        Interesse? Einfach uns <Link to="/contact">hier</Link> anschreiben!
-      </h2>{" "}
     </Container>
   );
 }

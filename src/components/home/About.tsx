@@ -2,6 +2,7 @@ import React from "react";
 import { Card, CardContent, Container, Divider } from "@mui/material";
 import Gruppe from "../../assets/image3.jpeg";
 import "./About.css";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -39,6 +40,9 @@ export default function About() {
           </CardContent>
         </div>
       </Card>
+      <h2>
+        Interesse? Einfach uns <Link to="/contact">hier</Link> anschreiben!
+      </h2>
     </Container>
   );
 }

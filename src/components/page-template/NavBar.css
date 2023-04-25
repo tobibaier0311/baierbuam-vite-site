@@ -1,6 +1,12 @@
 .NavBar {
   padding-bottom: 10px;
   position: sticky;
+
+  display: flex;
+  direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
 }
 .Icon {
   display: none;
@@ -11,11 +17,26 @@
   align-items: center;
 }
 
+.Logo {
+  display: none;
+}
 @media (max-width: 950px) {
   .Icon {
     display: block;
   }
   .Links {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .NavBar {
+    margin: none;
+  }
+  .Logo {
+    display: block;
+  }
+  .brand {
     display: none;
   }
 }
