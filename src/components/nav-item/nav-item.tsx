@@ -33,7 +33,7 @@ export function NavItem({
   return (
     <Button
       disabled={disabled}
-      sx={location.pathname === to ? { color: "#003d6f" } : { color: "grey" }}
+      sx={{ "&:hover": { backgroundColor: "transparent" } }}
       startIcon={icon}
       onClick={handleClick}
       className="Button"
