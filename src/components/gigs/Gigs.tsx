@@ -7,7 +7,6 @@ export function Gigs() {
   return (
     <Container className="GigPage">
       <h1>Termine 🗓️</h1>
-      <Divider />
       <div className="cards">
         {events.map((item, i) => (
           <motion.div

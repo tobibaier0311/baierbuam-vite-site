@@ -22,7 +22,6 @@ export default function Gallery({ images }: GalleryProps) {
   return (
     <Container>
       <h1>Galerie</h1>
-      <Divider />
       <div
         style={{
           display: "flex",

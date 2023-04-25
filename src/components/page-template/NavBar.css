@@ -1,12 +1,13 @@
 .NavBar {
-  padding-bottom: 10px;
-  position: sticky;
-
   display: flex;
   direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0 10px;
+  border-bottom: 0.5px solid lightgrey;
+}
+.brand {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .Icon {
   display: none;

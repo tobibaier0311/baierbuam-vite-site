@@ -8,7 +8,6 @@ export default function About() {
   return (
     <Container>
       <h1>Über uns</h1>
-      <Divider />
       <Card
         className="card"
         variant="outlined"

@@ -23,6 +23,7 @@ export function Contact() {
 
   const [spinner, setSpinner] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
 
   const onSubmit = (e: any) => {
     e.preventDefault();
@@ -36,25 +37,11 @@ export function Contact() {
       .then(() => {
         setSpinner(false);
         setSuccess(true);
-        return (
-          <Backdrop open>
-            <Alert severity="success">
-              Anfrage wurde erfolgreich gesendet, herzlichen Dank!
-            </Alert>
-          </Backdrop>
-        );
+        return <Alert severity="success">Erfolg!</Alert>;
       })
       .catch((err) => {
         setSpinner(false);
-        setSuccess(false);
-        return (
-          <Backdrop open>
-            <Alert severity="error">
-              Anfrage konnte leider nicht gesendet werden, versuche Sie es bitte
-              erneut oder rufen Sie uns einfach an.
-            </Alert>
-          </Backdrop>
-        );
+        setError(true);
       });
   };
 
@@ -65,7 +52,6 @@ export function Contact() {
   return (
     <Container className="container">
       <h1>Kontakt</h1>
-      <Divider />
       <Grid className="grid" container spacing={12}>
         <Grid item lg={6} xs={12}>
           <h2>Kontaktformular</h2>
@@ -73,6 +59,29 @@ export function Contact() {
             {spinner && (
               <Backdrop open>
                 <CircularProgress color="inherit" />
+              </Backdrop>
+            )}
+            {success && (
+              <Backdrop open>
+                <Alert
+                  onClose={() => setSuccess(!success)}
+                  className="alert"
+                  severity="success"
+                >
+                  Anfrage wurde erfolreich versendet, vielen Dank!
+                </Alert>
+              </Backdrop>
+            )}
+            {error && (
+              <Backdrop open>
+                <Alert
+                  onClose={() => setError(!error)}
+                  className="alert"
+                  severity="error"
+                >
+                  Leider ist ein Problem aufgetreten. Rufen Sie uns bitte an
+                  oder schreiben Sie uns direkt eine Email, Danke!
+                </Alert>
               </Backdrop>
             )}
             <Grid container spacing={4}>
@@ -146,7 +155,6 @@ export function Contact() {
                 <Button variant="contained" type="submit">
                   Senden
                 </Button>
-                <Button onClick={() => setSuccess(true)}>HI</Button>
               </Grid>
             </Grid>
           </form>
