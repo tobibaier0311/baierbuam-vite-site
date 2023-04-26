@@ -1,6 +1,8 @@
 .stack {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
@@ -10,8 +12,5 @@
 @media (max-width: 1024px) {
   .stack {
     flex-direction: column;
-  }
-  .image1 {
-    width: 90vw;
   }
 }

@@ -51,7 +51,6 @@ const routes = [
         element: (
           <Gallery
             images={[
-              Bild3,
               Bild4,
               Bild5,
               Bild6,
