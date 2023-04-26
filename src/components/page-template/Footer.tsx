@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Divider, Stack } from "@mui/material";
 import "./Footer.css";
+import { NavItem } from "../nav-item/nav-item";
 
 export default function Footer() {
   return (
@@ -11,7 +12,7 @@ export default function Footer() {
           alignItems="center"
           justifyContent="space-around"
         >
-          <Button>DSGVO/Impressum</Button>
+          <NavItem to="/dsgvo" text="DSGVO/Impressum" />
         </Stack>
       </div>
     </>

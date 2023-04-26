@@ -18,6 +18,7 @@ import Bild12 from "./assets/img-10.jpg";
 import Bild13 from "./assets/img-11.jpg";
 import Bild14 from "./assets/img-12.jpg";
 import About from "./components/home/About";
+import { DSGVO } from "./components/dsgvo/dsgvo";
 
 const routes = [
   {
@@ -40,6 +41,10 @@ const routes = [
       {
         path: "contact",
         element: <Contact />,
+      },
+      {
+        path: "dsgvo",
+        element: <DSGVO />,
       },
       {
         path: "images",
