@@ -1,5 +1,5 @@
 import { Container, Divider } from "@mui/material";
-import { events } from "../../data/gigs";
+import { events2 } from "../../data/gigs";
 import { GigCard } from "./GigsCard";
 import { motion } from "framer-motion";
 
@@ -8,7 +8,7 @@ export function Gigs() {
     <Container className="GigPage">
       <h1>Termine 🗓️</h1>
       <div className="cards">
-        {events.map((item, i) => (
+        {events2.map((item, i) => (
           <motion.div
             initial={{ opacity: "0%" }}
             animate={{ opacity: "100%" }}
