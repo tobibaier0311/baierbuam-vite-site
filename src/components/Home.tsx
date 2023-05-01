@@ -19,7 +19,7 @@ export function Home() {
         <div className="animation">
           <motion.img
             className="image"
-            transition={{ delay: 0.5 }}
+            transition={{ delay: 1 }}
             initial={{ opacity: "0%", x: -200 }}
             whileInView={{ opacity: "100%", x: 0 }}
             src={RockMeets}
@@ -28,7 +28,7 @@ export function Home() {
           />
           <motion.img
             className="image"
-            transition={{ delay: 0.5 }}
+            transition={{ delay: 1 }}
             initial={{ opacity: "0%", x: 200 }}
             whileInView={{ opacity: "100%", x: 0 }}
             src={Logo}
