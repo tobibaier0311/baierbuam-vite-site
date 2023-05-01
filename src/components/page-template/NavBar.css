@@ -3,7 +3,6 @@
   direction: row;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 0.5px solid lightgrey;
 }
 .brand {
   margin-left: 10px;
