@@ -10,12 +10,7 @@ import Gruppe2 from "../assets/Gruppenfoto.png";
 export function Home() {
   return (
     <Container>
-      <div
-        className="hero"
-        style={{
-          backgroundImage: `url(${Gruppe2})`,
-        }}
-      >
+      <div className="hero">
         <div className="animation">
           <motion.img
             className="image"
