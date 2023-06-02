@@ -47,23 +47,9 @@ export const events = [
 
 export const events2 = [
   {
-    year: "Mai 2023",
-    event: "Florianifest der freiwilligen Feuerwehr Schalding r.d.D.",
-    date: "Sa, 13.05.2023",
-    description: "",
-  },
-  {
-    year: "Mai 2023",
-    event: "SV Schalding Heining gegen Deisenhofen",
-    date: "Sa, 27.05.2023",
-    description:
-      "Musikalische Unterstützung für den SVS vor und nach dem Spiel",
-  },
-
-  {
-    year: "Mai 2023",
-    event: "Frühshoppen am Langlebenhof Passau",
-    date: "So, 28.05.2023",
+    year: "Juni 2023",
+    event: "Sommerfest der Sparkasse Passau am Langlebenhof",
+    date: "14.06.2023",
     description: "",
   },
   {
