@@ -1,4 +1,4 @@
-import { Box, Divider } from "@mui/material";
+import { Box, Divider, Container } from "@mui/material";
 import React from "react";
 import { Outlet } from "react-router-dom";
 
@@ -8,20 +8,12 @@ import Footer from "./Footer";
 
 export function PageTemplate() {
   return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-between",
-        height: "100%",
-      }}
-    >
+    <>
       <NavBar />
       <div className="outlet">
         <Outlet />
       </div>
-
       <Footer />
-    </Box>
+    </>
   );
 }

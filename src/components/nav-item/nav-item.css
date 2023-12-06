@@ -1,11 +1,10 @@
 .buttonText {
   text-transform: none;
-  color: grey;
+  color: white;
 }
 
 .buttonTextClicked {
   text-transform: none;
-  color: #003d6f;
 }
 
 @media (max-width: 950px) {

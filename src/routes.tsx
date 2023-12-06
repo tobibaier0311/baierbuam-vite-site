@@ -17,7 +17,6 @@ import Bild11 from "./assets/img-9.jpg";
 import Bild12 from "./assets/img-10.jpg";
 import Bild13 from "./assets/img-11.jpg";
 import Bild14 from "./assets/img-12.jpg";
-import About from "./components/home/About";
 import { DSGVO } from "./components/dsgvo/dsgvo";
 
 const routes = [
@@ -29,10 +28,6 @@ const routes = [
       {
         path: "/",
         element: <Home />,
-      },
-      {
-        path: "about",
-        element: <About />,
       },
       {
         path: "gigs",

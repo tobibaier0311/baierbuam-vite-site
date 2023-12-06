@@ -1,10 +1,11 @@
 import Logo from "../../assets/logo1.svg";
+import TestLogo from "../../assets/Logo.png";
 import React from "react";
 
 export function Brand() {
   return (
-    <>
-      <img src={Logo} width="300px" />
-    </>
+    <div className="brand-container">
+      <img src={TestLogo} width="100px" />
+    </div>
   );
 }

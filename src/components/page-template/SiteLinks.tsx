@@ -18,7 +18,6 @@ export default function SiteLinks() {
         justifyContent="space-between"
       >
         <NavItem text="Home" to="/" />
-        <NavItem text="Über uns" to="/about" />
         <NavItem text="Termine" to="/gigs" />
         <NavItem text="Galerie" to="/images" />
         <NavItem text="Kontakt" to="/contact" />

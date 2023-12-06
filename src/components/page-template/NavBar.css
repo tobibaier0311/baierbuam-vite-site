@@ -3,14 +3,21 @@
   direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 0;
 }
+
 .brand {
-  margin-left: 10px;
-  margin-right: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+  gap: 1.5rem;
 }
+
 .Icon {
   display: none;
 }
+
 .Links {
   display: flex;
   flex-direction: row;
