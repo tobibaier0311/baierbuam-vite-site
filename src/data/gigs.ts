@@ -19,21 +19,23 @@ export const events: Array<EventsType> = [
     date: "10. Februar 2024",
     title: "Fasching Frauenbund",
     location: "Schalding r.d.D",
-    description: "",
+    description:
+      "Musikalische Begleitung der Faschingsveranstaltung des Frauenbundes Schalding rechts der Donau.",
     id: 2,
   },
   {
     date: "13. Februar 2024",
     title: "Gaudiwurm Innstadt",
     location: "Passau, Innstadt",
-    description: "",
+    description:
+      "Teilnahme am großen Faschingszug der Faschingsfreunde durch die Innstadt Passaus.",
     id: 3,
   },
   {
     date: "02. März 2024",
     title: "SVS - FC Bayern II",
     location: "Sportanlage Reuthinger Weg",
-    description: "",
+    description: "Musikalische Unterstützung des SV Schalding-Heinig.",
     id: 4,
   },
   {

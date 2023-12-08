@@ -16,6 +16,7 @@ import { EventsType, events } from "../data/gigs";
 import { ArrowRightAlt, Event, FmdGood } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import "./StartGigs.css";
 
 const geg1 = {
   date: "",
@@ -77,7 +78,7 @@ export default function StartGigs() {
                 <TableCell style={styles.tableCell}>
                   <p>{item.title}</p>
                 </TableCell>
-                <TableCell style={styles.tableCell}>
+                <TableCell className="location" style={styles.tableCell}>
                   <p>{item.location}</p>
                 </TableCell>
                 <TableCell style={styles.tableCell} align="right">
@@ -140,11 +141,7 @@ export default function StartGigs() {
         <DialogContent>
           <DialogContentText>
             <Typography variant="body1" paragraph>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet.
+              {gig.description}
             </Typography>
           </DialogContentText>
         </DialogContent>
