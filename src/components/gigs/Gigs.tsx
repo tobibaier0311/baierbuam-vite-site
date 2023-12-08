@@ -1,5 +1,5 @@
 import { Container, Divider } from "@mui/material";
-import { events2 } from "../../data/gigs";
+import { events } from "../../data/gigs";
 import { GigCard } from "./GigsCard";
 import { motion } from "framer-motion";
 
@@ -8,13 +8,13 @@ export function Gigs() {
     <Container className="GigPage">
       <h1>Termine 🗓️</h1>
       <div className="cards">
-        {events2.map((item, i) => (
+        {events.map((item, i) => (
           <motion.div
             initial={{ opacity: "0%" }}
             animate={{ opacity: "100%" }}
             transition={{ duration: 2, delay: i * 0.2 }}
           >
-            <GigCard key={item.date} event={item.event} date={item.date} />
+            <GigCard key={item.date} event={item.title} date={item.date} />
           </motion.div>
         ))}
       </div>

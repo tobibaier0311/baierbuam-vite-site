@@ -6,88 +6,62 @@
   },
   */
 
-export const events = [
-  {
-    event: "Florianifest der freiwilligen Feuerwehr Schalding r.d.D.",
-    date: "Sa, 13.05.2023",
-    description: "",
-  },
-  {
-    event: "SV Schalding Heining gegen Deisenhofen",
-    date: "Sa, 27.05.2023",
-    description:
-      "Musikalische Unterstützung für den SVS vor und nach dem Spiel",
-  },
-  {
-    event: "Frühshoppen am Langlebenhof Passau",
-    date: "So, 28.05.2023",
-    description: "",
-  },
-  {
-    event: "100 Jahre Imkerverein Heining",
-    date: "So, 18.06.2023",
-    description: "",
-  },
-  {
-    event: "Grillfest der Schaldinger Schützen",
-    date: "Sa, 24.06.2023",
-    description: "",
-  },
-  {
-    event: "60 Jahre Grundschule Heining",
-    date: "Fr, 30.06.2023",
-    description: "",
-  },
-  {
-    event: "50 Jahre Gartenbauverein Schalding links der Donau",
-    date: "Sa, 30.09.2023",
-    description: "",
-  },
-];
+export interface EventsType {
+  date: string;
+  title: string;
+  location: string;
+  description: string;
+  id?: number;
+}
 
-export const events2 = [
+export const events: Array<EventsType> = [
   {
-    year: "Mai 2023",
-    event: "Florianifest der freiwilligen Feuerwehr Schalding r.d.D.",
-    date: "Sa, 13.05.2023",
+    date: "10. Februar 2024",
+    title: "Fasching Frauenbund",
+    location: "Schalding r.d.D",
     description: "",
+    id: 2,
   },
   {
-    year: "Mai 2023",
-    event: "SV Schalding Heining gegen Deisenhofen",
-    date: "Sa, 27.05.2023",
-    description:
-      "Musikalische Unterstützung für den SVS vor und nach dem Spiel",
-  },
-
-  {
-    year: "Mai 2023",
-    event: "Frühshoppen am Langlebenhof Passau",
-    date: "So, 28.05.2023",
+    date: "13. Februar 2024",
+    title: "Gaudiwurm Innstadt",
+    location: "Passau, Innstadt",
     description: "",
+    id: 3,
   },
   {
-    year: "Juni 2023",
-    event: "100 Jahre Imkerverein Heining",
-    date: "So, 18.06.2023",
+    date: "02. März 2024",
+    title: "SVS - FC Bayern II",
+    location: "Sportanlage Reuthinger Weg",
     description: "",
+    id: 4,
   },
   {
-    year: "Juni 2023",
-    event: "Grillfest der Schaldinger Schützen",
-    date: "Sa, 24.06.2023",
+    date: "16. März 2024",
+    title: "Starkbierbierfest Schalding",
+    location: "Schalding r.d.D",
     description: "",
+    id: 5,
   },
   {
-    year: "Juni 2023",
-    event: "60 Jahre Grundschule Heining",
-    date: "Fr, 30.06.2023",
+    date: "27. April 2024",
+    title: "SVS - Wacker Burghausen",
+    location: "Sportanlage Reuthinger Weg",
     description: "",
+    id: 6,
   },
   {
-    year: "September 2023",
-    event: "50 Jahre Gartenbauverein Schalding links der Donau",
-    date: "Sa, 30.09.2023",
+    date: "11. Mai 2024",
+    title: "SVS - Würzburg",
+    location: "Sportanlage Reuthinger Weg",
     description: "",
+    id: 7,
+  },
+  {
+    date: "29. Juni 2024",
+    title: "Pfarrfest Heining",
+    location: "Heining",
+    description: "",
+    id: 8,
   },
 ];
