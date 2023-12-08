@@ -5,7 +5,6 @@ import { Gigs } from "./components/gigs/Gigs";
 import { Home } from "./components/Home";
 import Gallery from "./components/ImagePage/Gallery";
 import { PageTemplate } from "./components/page-template/page-template";
-import Bild3 from "./assets/img-1.jpg";
 import Bild4 from "./assets/img-2.jpg";
 import Bild5 from "./assets/img-3.jpg";
 import Bild6 from "./assets/img-4.jpg";
@@ -17,7 +16,6 @@ import Bild11 from "./assets/img-9.jpg";
 import Bild12 from "./assets/img-10.jpg";
 import Bild13 from "./assets/img-11.jpg";
 import Bild14 from "./assets/img-12.jpg";
-import About from "./components/home/About";
 import { DSGVO } from "./components/dsgvo/dsgvo";
 
 const routes = [
@@ -29,10 +27,6 @@ const routes = [
       {
         path: "/",
         element: <Home />,
-      },
-      {
-        path: "about",
-        element: <About />,
       },
       {
         path: "gigs",
@@ -73,5 +67,9 @@ const routes = [
 const router = createBrowserRouter(routes);
 
 export function AppRoutes() {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <RouterProvider router={router} />
+    </>
+  );
 }
