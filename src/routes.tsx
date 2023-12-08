@@ -5,7 +5,6 @@ import { Gigs } from "./components/gigs/Gigs";
 import { Home } from "./components/Home";
 import Gallery from "./components/ImagePage/Gallery";
 import { PageTemplate } from "./components/page-template/page-template";
-import Bild3 from "./assets/img-1.jpg";
 import Bild4 from "./assets/img-2.jpg";
 import Bild5 from "./assets/img-3.jpg";
 import Bild6 from "./assets/img-4.jpg";
@@ -68,5 +67,9 @@ const routes = [
 const router = createBrowserRouter(routes);
 
 export function AppRoutes() {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <RouterProvider router={router} />
+    </>
+  );
 }

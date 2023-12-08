@@ -16,8 +16,8 @@ export default function NavBar() {
     <Container>
       <div className="NavBar">
         <a onClick={() => to("/")} className="brand">
-          {/*<Brand />*/}
-          <h1>Baierbuam And Friends</h1>
+          <Brand />
+          <h1 style={{ textDecoration: "none" }}>Baierbuam And Friends</h1>
         </a>
         <img src={Logo} width="80px" className="Logo" />
         <div className="Links">

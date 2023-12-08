@@ -1,4 +1,4 @@
-import { Button, Container, Divider } from "@mui/material";
+import { Button, Container } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import "./Home.css";
 
@@ -10,6 +10,8 @@ import Gruppe2 from "../assets/Gruppenfoto.png";
 
 import Gruppe from "../assets/image3.jpeg";
 import { useNavigate } from "react-router-dom";
+import PrimaryButton from "./utility/PrimaryButton";
+import StartGigs from "./StartGigs";
 
 export function Home() {
   const to = useNavigate();
@@ -43,10 +45,12 @@ export function Home() {
               width="300px"
             />
           </div>
+          <div className="button-group">
+            <PrimaryButton label="Anfragen" link="/contact" />
+            <PrimaryButton label="Auftritte" link="/gigs" secondary />
+          </div>
         </div>
       </Container>
-
-      <Divider variant="middle" className="home-divider" />
 
       <div className="about">
         <motion.img
@@ -65,44 +69,33 @@ export function Home() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            Boarisch, Rock-Klassiker & Party-Hits.
+            Boarisch, Rock-Klassiker & Party-Hits
           </motion.h1>
-          <p>
-            Wir, die <span>"Baierbuam And Friends"</span> sind eine Gruppe
-            ambitionierter Hobby-Musiker aus dem Raum Schalding r.d.D./Heining.
-            Stets mit dem Motto "Rock meets Blasmusik" treten wir auf
-            verschiedenen Veranstaltungen im Raum Passau auf. <br />
-          </p>
-          <p>
-            Von kleineren Auftritten an Geburtstagen bestimmter "Ehrenfans",
-            über musikalische Begleitung verschiedener Dorffeste wie zum
-            Beispiel dem Starkbierfest in Schalding, bis hin zur Unterstützung
-            der 1. Fußballmannschaft des SV Schalding Heining ist alles dabei.
-            Unsere aktuelle Besetzung sind 5 Trompeten, 4 Posaunen, 1
-            Klarinette, 1 E-Gitarre, 1 E-Bass und 1 Schlagzeug.
-          </p>
+          <div>
+            <p>
+              Wir, die <span>"Baierbuam And Friends"</span> sind eine Gruppe
+              ambitionierter Hobby-Musiker aus dem Raum Schalding
+              r.d.D./Heining. Stets mit dem Motto "Rock meets Blasmusik" treten
+              wir auf verschiedenen Veranstaltungen im Raum Passau auf. <br />
+            </p>
+            <p>
+              Von kleineren Auftritten an Geburtstagen bestimmter "Ehrenfans",
+              über musikalische Begleitung verschiedener Dorffeste wie zum
+              Beispiel dem Starkbierfest in Schalding, bis hin zur Unterstützung
+              der 1. Fußballmannschaft des SV Schalding Heining ist alles dabei.
+              Unsere aktuelle Besetzung sind 5 Trompeten, 4 Posaunen, 1
+              Klarinette, 1 E-Gitarre, 1 E-Bass und 1 Schlagzeug.
+            </p>
+            <p>
+              Unser Repertoire zeichnet sich durch ein sehr breites Spektrum
+              aus. Enthalten sind natürlich bestimmte All Time Hits wie "Sweet
+              Caroline" oder "Highway to Hell".
+            </p>
+          </div>
 
-          <p>
-            Unser Repertoire zeichnet sich durch ein sehr breites Spektrum aus.
-            Enthalten sind natürlich bestimmte All Time Hits wie "Sweet
-            Caroline" oder "Highway to Hell".
-          </p>
-          <Button
-            sx={{
-              color: "#f5f5f5",
-              marginTop: "1.5rem",
-              textTransform: "none",
-              fontFamily: "Poppins",
-            }}
-            variant="outlined"
-            size="large"
-            onClick={() => to("/contact")}
-          >
-            Buchen
-          </Button>
+          <PrimaryButton label="Interesse?" link="/contact" />
         </motion.div>
       </div>
-      <Divider variant="middle" className="home-divider" />
       <Container className="gig-container-start">
         <h1>Unsere nächsten Auftritte</h1>
         <Button
@@ -117,6 +110,7 @@ export function Home() {
         >
           Alle Auftritte
         </Button>
+        <StartGigs />
       </Container>
     </div>
   );

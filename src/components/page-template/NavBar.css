@@ -10,8 +10,8 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  color: whitesmoke;
-  gap: 1.5rem;
+  color: #f5f5f5;
+  gap: 1rem;
 }
 
 .Icon {
