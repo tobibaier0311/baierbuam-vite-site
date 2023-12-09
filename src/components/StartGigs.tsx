@@ -56,10 +56,7 @@ export default function StartGigs() {
       maxWidth: "900px",
       borderBottom: "1px solid #042556",
       padding: "2rem 0",
-    },
-    tableCell: {
-      padding: "2rem 0",
-      fontSize: "17px",
+      fontSize: "18px",
     },
     dialogSub: {
       display: "flex",
@@ -73,16 +70,16 @@ export default function StartGigs() {
       <div style={styles.listContainer as React.CSSProperties}>
         {gigs.map((item, i) => (
           <Grid style={styles.table} key={i} container alignItems="center">
-            <Grid item sm={3} xs={12}>
+            <Grid item md={3} xs={12}>
               <p className="grid-left">{item.date}</p>
             </Grid>
-            <Grid className="grid-left" item sm={3} xs={12}>
+            <Grid className="grid-left" item md={3} xs={12}>
               <p>{item.title}</p>
             </Grid>
-            <Grid textAlign="center" item sm={4} xs={12}>
+            <Grid textAlign="center" item md={4} xs={12}>
               <p>{item.location}</p>
             </Grid>
-            <Grid className="grid-detail" item sm={2} xs={12}>
+            <Grid className="grid-detail" item md={2} xs={12}>
               <Button
                 onClick={() => handleDialogOpen(item.id as number)}
                 sx={{
