@@ -1,4 +1,4 @@
-import { Box, Button, Container, Divider, Drawer, IconButton, List, Paper, Stack, SwipeableDrawer } from "@mui/material";
+import { Box, Button, Container, Divider, Drawer, IconButton } from "@mui/material";
 import React, { useState } from "react";
 import SiteLinks from "./SiteLinks";
 import MenuIcon from '@mui/icons-material/Menu';
@@ -33,14 +33,15 @@ export default function NavBar() {
         </IconButton>
         </div>
         
-        <Drawer open={open} anchor="right" variant="temporary" onClick={() => setOpen(false)} onClose={() => setOpen(false)}>
+        <Drawer open={open} anchor="right" variant="temporary" onClose={() => setOpen(false)}>
           <Box sx={{ width: 150, padding: "0 2rem", display: "flex",flexDirection: "column", alignItems:"start"}}>
               LOGO?
               <Divider sx={{ alignSelf: "stretch"}}/>
+              <div onClick={() => setOpen(false)}>
               <NavItem to="/" text="Home"/>
               <NavItem to="/gigs" text="Termine"/>
               <NavItem to="/images" text="Galerie" />
-              <NavItem to="/contact" text="Kontakt"/>
+              <NavItem to="/contact" text="Kontakt"/></div>
               <Divider sx={{ alignSelf: "stretch"}}/>
           </Box>
         </Drawer>
