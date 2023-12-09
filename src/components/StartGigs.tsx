@@ -6,6 +6,7 @@ import {
   DialogContentText,
   DialogTitle,
   Divider,
+  Grid,
   Table,
   TableBody,
   TableCell,
@@ -16,6 +17,7 @@ import { EventsType, events } from "../data/gigs";
 import { ArrowRightAlt, Event, FmdGood } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+
 import "./StartGigs.css";
 
 const geg1 = {
@@ -49,10 +51,11 @@ export default function StartGigs() {
       justifyContent: "center",
       alignItems: "center",
       flexDirection: "column",
-      rowGap: "4rem",
     },
     table: {
       maxWidth: "900px",
+      borderBottom: "1px solid #042556",
+      padding: "2rem 0",
     },
     tableCell: {
       padding: "2rem 0",
@@ -68,37 +71,33 @@ export default function StartGigs() {
   return (
     <>
       <div style={styles.listContainer as React.CSSProperties}>
-        <Table style={styles.table}>
-          <TableBody>
-            {gigs.map((item, i) => (
-              <TableRow key={i}>
-                <TableCell style={styles.tableCell}>
-                  <p>{item.date}</p>
-                </TableCell>
-                <TableCell style={styles.tableCell}>
-                  <p>{item.title}</p>
-                </TableCell>
-                <TableCell className="location" style={styles.tableCell}>
-                  <p>{item.location}</p>
-                </TableCell>
-                <TableCell style={styles.tableCell} align="right">
-                  <Button
-                    onClick={() => handleDialogOpen(item.id as number)}
-                    sx={{
-                      textTransform: "none",
-                      color: "#042556",
-                    }}
-                    size="small"
-                    variant="outlined"
-                    disableRipple
-                  >
-                    Details
-                  </Button>
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
+        {gigs.map((item, i) => (
+          <Grid style={styles.table} key={i} container alignItems="center">
+            <Grid item sm={3} xs={12}>
+              <p className="grid-left">{item.date}</p>
+            </Grid>
+            <Grid className="grid-left" item sm={3} xs={12}>
+              <p>{item.title}</p>
+            </Grid>
+            <Grid textAlign="center" item sm={4} xs={12}>
+              <p>{item.location}</p>
+            </Grid>
+            <Grid className="grid-detail" item sm={2} xs={12}>
+              <Button
+                onClick={() => handleDialogOpen(item.id as number)}
+                sx={{
+                  textTransform: "none",
+                  color: "#042556",
+                }}
+                size="small"
+                variant="outlined"
+                disableRipple
+              >
+                Details
+              </Button>
+            </Grid>
+          </Grid>
+        ))}
         <Button
           variant="text"
           endIcon={<ArrowRightAlt />}
@@ -107,6 +106,7 @@ export default function StartGigs() {
           sx={{
             color: "#042556",
             textTransform: "none",
+            marginTop: "4rem",
           }}
         >
           <Typography variant="button">Alle Termine</Typography>

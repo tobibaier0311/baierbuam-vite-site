@@ -1,5 +1,24 @@
+.grid-left {
+  text-align: left;
+}
+
+.grid-detail {
+  text-align: right;
+}
+
 @media (max-width: 1024px) {
   .location {
     display: none;
   }
+  .row {
+    font-size: 1px;
+  }
+
+  .grid-left,
+  .grid-detail {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
 }
