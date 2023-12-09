@@ -44,6 +44,7 @@
   margin-left: -2.5rem;
   border-radius: 10px;
   max-width: 100%;
+  align-self: center;
 }
 
 .about-text {
@@ -67,14 +68,6 @@ h1 {
 
 .about-text p {
   font-weight: 300;
-}
-
-.about span {
-  text-decoration-line: underline;
-  text-decoration-skip-ink: none;
-  text-decoration-thickness: 3px;
-  text-decoration-color: #042556;
-  text-underline-offset: 4px;
 }
 
 .about-button {
@@ -119,6 +112,6 @@ h1 {
   }
 
   .home-container {
-    gap: 3rem;
+    gap: 5rem;
   }
 }

@@ -1,18 +1,22 @@
-import { Container, Stack } from "@mui/material";
-import React from "react";
+import { Box, Button, Container, Divider, Drawer, IconButton, List, Paper, Stack, SwipeableDrawer } from "@mui/material";
+import React, { useState } from "react";
 import SiteLinks from "./SiteLinks";
+import MenuIcon from '@mui/icons-material/Menu';
 
 import Logo from "../../assets/Logo.png";
 
 import { Brand } from "../brand/Brand";
 
 import "./NavBar.css";
-import { MenuDrawer } from "../menu-drawer/menu-drawer";
 import { useNavigate } from "react-router-dom";
+import { NavItem } from "../nav-item/nav-item";
 
 export default function NavBar() {
-  const to = useNavigate();
-  return (
+  const [open, setOpen] = useState(false)
+  
+  const to = useNavigate(); 
+
+  return ( 
     <Container>
       <div className="NavBar">
         <a onClick={() => to("/")} className="brand">
@@ -23,9 +27,23 @@ export default function NavBar() {
         <div className="Links">
           <SiteLinks />
         </div>
-        <div className="Icon">
-          <MenuDrawer />
+        <div className="icon">
+          <IconButton  onClick={() => setOpen(true)} sx={{ color: "#121212"}}>
+          <MenuIcon fontSize="large"/> 
+        </IconButton>
         </div>
+        
+        <Drawer open={open} anchor="right" variant="temporary" onClick={() => setOpen(false)} onClose={() => setOpen(false)}>
+          <Box sx={{ width: 150, padding: "0 2rem", display: "flex",flexDirection: "column", alignItems:"start"}}>
+              LOGO?
+              <Divider sx={{ alignSelf: "stretch"}}/>
+              <NavItem to="/" text="Home"/>
+              <NavItem to="/gigs" text="Termine"/>
+              <NavItem to="/images" text="Galerie" />
+              <NavItem to="/contact" text="Kontakt"/>
+              <Divider sx={{ alignSelf: "stretch"}}/>
+          </Box>
+        </Drawer>
       </div>
     </Container>
   );
