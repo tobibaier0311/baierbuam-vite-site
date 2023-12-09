@@ -43,6 +43,7 @@
   object-fit: cover;
   margin-left: -2.5rem;
   border-radius: 10px;
+  max-width: 100%;
 }
 
 .about-text {
