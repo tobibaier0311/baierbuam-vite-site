@@ -6,10 +6,14 @@ import {
   Drawer,
   IconButton,
   Stack,
+  Tooltip,
 } from "@mui/material";
 import React, { useState } from "react";
 import SiteLinks from "./SiteLinks";
 import MenuIcon from "@mui/icons-material/Menu";
+
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
 
 import Logo from "../../assets/Logo.png";
 
@@ -18,7 +22,7 @@ import { Brand } from "../brand/Brand";
 import "./NavBar.css";
 import { useNavigate } from "react-router-dom";
 import { NavItem } from "../nav-item/nav-item";
-import { ChevronLeft, ChevronRight } from "@mui/icons-material";
+import { ChevronRight } from "@mui/icons-material";
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
@@ -44,17 +48,22 @@ export default function NavBar() {
           </div>
         </div>
       </Container>
-      <Drawer open={open} anchor="right" variant="persistent">
+      <Drawer
+        open={open}
+        anchor="right"
+        variant="temporary"
+        onClose={() => setOpen(false)}
+      >
         <div
           style={{
-            height: "89px",
+            height: "100px",
             display: "flex",
             alignItems: "center",
             padding: "0 1rem",
           }}
         >
           <IconButton edge="end" onClick={() => setOpen(false)}>
-            <ChevronRight />
+            <ChevronRight fontSize="large" />
           </IconButton>
         </div>
         <Box
@@ -75,6 +84,18 @@ export default function NavBar() {
             <NavItem to="/contact" text="Kontakt" />
           </Stack>
           <Divider sx={{ alignSelf: "stretch" }} />
+          <Stack gap="0.5rem" direction="row" sx={{ padding: "1rem 0" }}>
+            <Tooltip title="Instagram">
+              <IconButton href="https://www.instagram.com/baierbuamandfriends">
+                <InstagramIcon className="IconButton" fontSize="medium" />
+              </IconButton>
+            </Tooltip>
+            <Tooltip title="Facebook">
+              <IconButton href="https://www.facebook.com/baierbuamandfriends">
+                <FacebookIcon className="IconButton" fontSize="medium" />
+              </IconButton>
+            </Tooltip>
+          </Stack>
         </Box>
       </Drawer>
     </>
