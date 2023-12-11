@@ -1,26 +1,60 @@
-import { Card, Grid } from "@mui/material";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  Collapse,
+  Divider,
+  IconButton,
+} from "@mui/material";
 import "./GigsCard.css";
+import { ExpandLess, ExpandMore, MoreVert } from "@mui/icons-material";
+import { useState } from "react";
 
-export type CardProps = {
+type GigCardProps = {
   date: string;
-  event: string;
+  title: string;
+  location: string;
+  description?: string;
+  id?: number;
 };
 
-export const GigCard = ({ date, event }: CardProps) => {
+export const GigCard = ({
+  date,
+  title,
+  location,
+  description,
+  id,
+}: GigCardProps) => {
+  const [more, setMore] = useState(false);
+
+  const handleMore = () => {
+    setMore(!more);
+  };
+
   return (
     <Card variant="outlined" className="card">
-      <Grid container direction="row">
-        <Grid item xs={12} md={3}>
-          <div>
-            <h2>{date}</h2>
-          </div>
-        </Grid>
-        <Grid item xs={12} md={9}>
-          <div>
-            <h2 style={{ color: "#003d6f" }}>{event}</h2>
-          </div>
-        </Grid>
-      </Grid>
+      <CardHeader
+        sx={description ? { cursor: "pointer" } : null}
+        onClick={description && (() => handleMore())}
+        action={
+          description && (
+            <IconButton onClick={() => handleMore()}>
+              {more ? <ExpandLess /> : <ExpandMore />}
+            </IconButton>
+          )
+        }
+        title={title}
+        subheader={`${date}, ${location}`}
+      />
+
+      {description && (
+        <>
+          <Collapse in={more}>
+            <Divider />
+            <CardContent>{description}</CardContent>
+          </Collapse>
+        </>
+      )}
     </Card>
   );
 };

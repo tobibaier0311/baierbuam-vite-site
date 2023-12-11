@@ -1,3 +1,12 @@
+.nav-title {
+  text-decoration: none;
+}
+
+.nav-container {
+  border-bottom: 1px solid #d3d3d3;
+  width: 100%;
+}
+
 .NavBar {
   display: flex;
   direction: row;
@@ -24,11 +33,10 @@
   flex-direction: row;
   align-items: center;
 }
-
-.Logo {
-  display: none;
-}
 @media (max-width: 950px) {
+  .nav-title {
+    font-size: x-large;
+  }
   .icon {
     display: block;
   }
@@ -41,10 +49,10 @@
   .NavBar {
     margin: none;
   }
-  .Logo {
-    display: block;
+  .nav-title {
+    font-size: large;
   }
   .brand {
-    display: none;
+    gap: 0.5rem;
   }
 }

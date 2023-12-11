@@ -8,13 +8,13 @@ export function Gigs() {
     <Container className="GigPage">
       <h1>Termine 🗓️</h1>
       <div className="cards">
-        {events.map((item, i) => (
+        {events.map((gig, i) => (
           <motion.div
             initial={{ opacity: "0%" }}
             animate={{ opacity: "100%" }}
             transition={{ duration: 2, delay: i * 0.2 }}
           >
-            <GigCard key={item.date} event={item.title} date={item.date} />
+            <GigCard {...gig} key={gig.id} />
           </motion.div>
         ))}
       </div>

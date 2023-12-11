@@ -10,7 +10,7 @@ export interface EventsType {
   date: string;
   title: string;
   location: string;
-  description: string;
+  description?: string;
   id?: number;
 }
 
