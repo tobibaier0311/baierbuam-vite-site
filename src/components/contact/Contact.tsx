@@ -10,7 +10,6 @@ import {
 } from "@mui/material";
 import React, { useState } from "react";
 import { send } from "emailjs-com";
-import "./Contact.css";
 
 export function Contact() {
   const [toSend, setToSend] = useState({

@@ -1,4 +1,5 @@
 .card {
   margin: 2rem 0 2rem 0;
   padding: 1.5rem;
+  max-width: 600px;
 }
