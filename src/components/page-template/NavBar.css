@@ -55,4 +55,7 @@
   .brand {
     gap: 0.5rem;
   }
+  .brand-image {
+    display: none;
+  }
 }

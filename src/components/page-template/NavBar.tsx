@@ -32,7 +32,10 @@ export default function NavBar() {
         <Container>
           <div className="NavBar">
             <a onClick={() => to("/")} className="brand">
-              <Brand />
+              <div className="brand-image">
+                <Brand />
+              </div>
+
               <h2
                 className="nav-title"
                 style={{ textDecoration: "none", color: "#121212" }}
