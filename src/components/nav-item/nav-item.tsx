@@ -1,5 +1,5 @@
-import { Button } from "@mui/material";
-import React from "react";
+import { Button, Typography } from "@mui/material";
+import React, { CSSProperties } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
 import "./nav-item.css";
@@ -11,6 +11,7 @@ export type NavItemProps = {
   icon?: React.ReactNode;
   text: string;
   handleClose?: () => void;
+  footer?: boolean;
 };
 
 export function NavItem({
@@ -19,6 +20,7 @@ export function NavItem({
   icon,
   text,
   handleClose,
+  footer,
 }: NavItemProps) {
   const navigate = useNavigate();
   const location = useLocation();
@@ -46,7 +48,15 @@ export function NavItem({
           location.pathname === to ? "buttonTextClicked" : "buttonText"
         }
       >
-        <h3>{text}</h3>
+        <Typography
+          sx={
+            footer
+              ? ({ color: "#757575" } as CSSProperties)
+              : ({ color: "#042556" } as CSSProperties)
+          }
+        >
+          {text}
+        </Typography>
       </div>
     </Button>
   );

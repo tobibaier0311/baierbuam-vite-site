@@ -98,18 +98,6 @@ export function Home() {
       </div>
       <Container className="gig-container-start">
         <h1>Unsere nächsten Auftritte</h1>
-        <Button
-          sx={{
-            color: "#f5f5f5",
-            textTransform: "none",
-            fontFamily: "Poppins",
-            fontWeight: "200",
-          }}
-          endIcon={<ArrowForwardIosIcon fontSize="small" />}
-          variant="text"
-        >
-          Alle Auftritte
-        </Button>
         <StartGigs />
       </Container>
     </div>

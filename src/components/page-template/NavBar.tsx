@@ -1,6 +1,5 @@
 import {
   Box,
-  Button,
   Container,
   Divider,
   Drawer,
@@ -15,14 +14,12 @@ import MenuIcon from "@mui/icons-material/Menu";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 
-import Logo from "../../assets/Logo.png";
-
 import { Brand } from "../brand/Brand";
 
 import "./NavBar.css";
 import { useNavigate } from "react-router-dom";
 import { NavItem } from "../nav-item/nav-item";
-import { ChevronRight, Close } from "@mui/icons-material";
+import { ChevronRight } from "@mui/icons-material";
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);

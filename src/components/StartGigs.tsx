@@ -15,6 +15,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 import "./StartGigs.css";
+import PrimaryButton from "./utility/PrimaryButton";
 
 const geg1 = {
   date: "",
@@ -60,6 +61,9 @@ export default function StartGigs() {
       columnGap: "1rem",
       padding: "8px 0",
     },
+    allButton: {
+      marginTop: "2rem",
+    },
   };
   return (
     <>
@@ -91,19 +95,9 @@ export default function StartGigs() {
             </Grid>
           </Grid>
         ))}
-        <Button
-          variant="text"
-          endIcon={<ArrowRightAlt />}
-          disableRipple
-          onClick={() => to("/gigs")}
-          sx={{
-            color: "#042556",
-            textTransform: "none",
-            marginTop: "4rem",
-          }}
-        >
-          <Typography variant="button">Alle Termine</Typography>
-        </Button>
+        <div style={styles.allButton}>
+          <PrimaryButton link="/gigs" label="Alle Termine" />
+        </div>
       </div>
 
       <Dialog fullWidth open={open}>
