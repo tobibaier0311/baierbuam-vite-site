@@ -1,10 +1,12 @@
 .buttonText {
   text-transform: none;
-  color: white;
 }
 
 .buttonTextClicked {
   text-transform: none;
+  text-decoration: underline;
+  text-underline-offset: 7px;
+  text-decoration-color: #042556;
 }
 
 @media (max-width: 950px) {

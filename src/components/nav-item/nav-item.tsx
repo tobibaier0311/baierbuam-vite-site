@@ -35,7 +35,7 @@ export function NavItem({
   return (
     <Button
       disabled={disabled}
-      sx={{ "&:hover": { backgroundColor: "transparent" } }}
+      sx={{ "&:hover": { backgroundColor: "transparent" }, fontSize: "16px" }}
       startIcon={icon}
       onClick={handleClick}
       className="Button"
@@ -48,15 +48,15 @@ export function NavItem({
           location.pathname === to ? "buttonTextClicked" : "buttonText"
         }
       >
-        <Typography
-          sx={
+        <p
+          style={
             footer
               ? ({ color: "#757575" } as CSSProperties)
               : ({ color: "#042556" } as CSSProperties)
           }
         >
           {text}
-        </Typography>
+        </p>
       </div>
     </Button>
   );
