@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Divider, Modal } from "@mui/material";
+import { Container, Modal } from "@mui/material";
 import "./Gallery.css";
 
 type GalleryProps = {

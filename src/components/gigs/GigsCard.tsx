@@ -7,7 +7,7 @@ import {
   IconButton,
 } from "@mui/material";
 import "./GigsCard.css";
-import { ExpandLess, ExpandMore, MoreVert } from "@mui/icons-material";
+import { ExpandLess, ExpandMore } from "@mui/icons-material";
 import { useState } from "react";
 
 type GigCardProps = {

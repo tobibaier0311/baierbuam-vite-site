@@ -4,14 +4,20 @@ import {
   Button,
   CircularProgress,
   Container,
-  Divider,
   Grid,
   TextField,
 } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { send } from "emailjs-com";
+import { useLocation } from "react-router-dom";
 
 export function Contact() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   const [toSend, setToSend] = useState({
     firstName: "",
     lastName: "",

@@ -7,10 +7,6 @@ import {
   DialogTitle,
   Divider,
   Grid,
-  Table,
-  TableBody,
-  TableCell,
-  TableRow,
   Typography,
 } from "@mui/material";
 import { EventsType, events } from "../data/gigs";

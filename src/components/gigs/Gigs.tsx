@@ -3,8 +3,15 @@ import { events } from "../../data/gigs";
 import { GigCard } from "./GigsCard";
 import { motion } from "framer-motion";
 import { ArrowDownward } from "@mui/icons-material";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 export function Gigs() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <Container
       sx={{
