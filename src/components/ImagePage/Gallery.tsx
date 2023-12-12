@@ -35,7 +35,7 @@ export default function Gallery({ images }: GalleryProps) {
             style={{ margin: "20px", cursor: "pointer" }}
             onClick={() => triggerModal(image)}
           >
-            <img width="512px" src={image} alt={image} />
+            <img width="300px" src={image} alt={image} />
           </div>
         ))}
         <Modal open={open} onClose={() => closeModal()}>

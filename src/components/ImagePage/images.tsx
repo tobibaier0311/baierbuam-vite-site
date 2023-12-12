@@ -2,6 +2,7 @@ import { Container, ImageList, ImageListItem } from "@mui/material";
 import { images } from "../../data/images";
 
 export function Images() {
+  console.log(images.length);
   return (
     <Container>
       <h1>Galerie</h1>

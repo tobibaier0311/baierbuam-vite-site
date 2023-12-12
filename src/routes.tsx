@@ -17,6 +17,9 @@ import Bild12 from "./assets/img-10.jpg";
 import Bild13 from "./assets/img-11.jpg";
 import Bild14 from "./assets/img-12.jpg";
 import { DSGVO } from "./components/dsgvo/dsgvo";
+import { images } from "./data/images";
+
+const shuffledArray = images.sort((a, b) => 0.5 - Math.random());
 
 const routes = [
   {
@@ -42,23 +45,7 @@ const routes = [
       },
       {
         path: "images",
-        element: (
-          <Gallery
-            images={[
-              Bild4,
-              Bild5,
-              Bild6,
-              Bild7,
-              Bild8,
-              Bild9,
-              Bild10,
-              Bild11,
-              Bild12,
-              Bild13,
-              Bild14,
-            ]}
-          />
-        ),
+        element: <Gallery images={shuffledArray} />,
       },
     ],
   },
