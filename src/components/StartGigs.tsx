@@ -58,13 +58,6 @@ export default function StartGigs() {
       padding: "2rem 0",
       fontSize: "18px",
     },
-    gridDate: {
-      textDecorationLine: "underline",
-      textDecorationSkipInk: "none",
-      textDecorationThickness: "2px",
-      textDecorationColor: "#042556",
-      textUnderlineOffset: "5px",
-    },
     dialogSub: {
       display: "flex",
       alignItems: "center",
@@ -77,8 +70,8 @@ export default function StartGigs() {
       <div style={styles.listContainer as React.CSSProperties}>
         {gigs.map((item, i) => (
           <Grid style={styles.table} key={i} container alignItems="center">
-            <Grid item md={3} xs={12} >
-              <p className="grid-left" style={styles.gridDate as React.CSSProperties}>{item.date}</p>
+            <Grid item md={3} xs={12}>
+              <p className="grid-left">{item.date}</p>
             </Grid>
             <Grid className="grid-left" item md={3} xs={12}>
               <p>{item.title}</p>
