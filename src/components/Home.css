@@ -114,4 +114,8 @@ h1 {
   .home-container {
     gap: 5rem;
   }
+
+  .image {
+    width: 233px;
+  }
 }
