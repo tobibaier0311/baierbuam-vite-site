@@ -51,7 +51,7 @@ export default function NavBar() {
                 onClick={() => setOpen(true)}
                 sx={{ color: "#121212" }}
               >
-                <MenuIcon fontSize="large" />
+                <MenuIcon fontSize="medium" />
               </IconButton>
             </div>
           </div>
