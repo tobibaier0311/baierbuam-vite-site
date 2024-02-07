@@ -66,4 +66,12 @@ export const events: Array<EventsType> = [
     description: "",
     id: 8,
   },
+  {
+    date: "13. Oktober 2024",
+    title: "Oktoberfest Pleinting",
+    location: "Pleinting",
+    description:
+      "Frühshoppen im Rahmen des 1. Oktoberfest am Sportplatz in Pleinting",
+    id: 9,
+  },
 ];
