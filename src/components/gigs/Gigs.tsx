@@ -29,7 +29,7 @@ export function Gigs() {
           textDecoration: "none",
         }}
       >
-        Alle Termine <ArrowDownward sx={{ fontSize: "xx-large" }} />
+        Alle Termine
       </h1>
       <div>
         <div>
