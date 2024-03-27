@@ -34,10 +34,10 @@ export function Contact() {
     e.preventDefault();
     setSpinner(true);
     send(
-      import.meta.env.VITE_EMAILJS_SERVICE_ID,
-      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      process.env.VITE_EMAILJS_SERVICE_ID as string,
+      process.env.VITE_EMAILJS_TEMPLATE_ID as string,
       toSend,
-      import.meta.env.VITE_EMAILJS_USER_ID
+      process.env.VITE_EMAILJS_USER_ID
     )
       .then(() => {
         setSpinner(false);
