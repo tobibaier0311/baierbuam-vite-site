@@ -37,7 +37,7 @@ export function Contact() {
       import.meta.env.VITE_EMAILJS_SERVICE_ID,
       import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
       toSend,
-      "Wpxa4fHePyAvBKBUe"
+      import.meta.env.VITE_EMAILJS_USER_ID
     )
       .then(() => {
         setSpinner(false);
