@@ -33,12 +33,7 @@ export function Contact() {
   const onSubmit = (e: any) => {
     e.preventDefault();
     setSpinner(true);
-    send(
-      import.meta.env.VITE_EMAILJS_SERVICE_ID,
-      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-      toSend,
-      import.meta.env.VITE_EMAILJS_USER_ID
-    )
+    send("service_3dx1rzk", "template_0cmj5m5", toSend, "Wpxa4fHePyAvBKBUe")
       .then(() => {
         setSpinner(false);
         setSuccess(true);
