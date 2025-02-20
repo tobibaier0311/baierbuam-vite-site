@@ -41,7 +41,7 @@ export const events: Array<EventsType> = [
   },
   {
     date: "04. März 2025",
-    title: "Faschingszug Innstadt Passau /"Gaudiwurm/"",
+    title: "Faschingszug Innstadt Passau Gaudiwurm",
     location: "Innstadt Passau",
     description:
       "Mitwirken im Faschingszug der Faschingsfreunde Innstadt Passau ab ca 12 Uhr Mittag.",
