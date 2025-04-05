@@ -16,46 +16,6 @@ export interface EventsType {
 
 export const events: Array<EventsType> = [
   {
-    date: "27. Februar 2025",
-    title: "Rathaussturm Passau",
-    location: "Stadt Passau",
-    description:
-      "Marsch ab ca. 16 Uhr von der Innstadt Passau Richtung Rathaus, anschließendes Rocken im Rathaus.",
-    id: 1,
-  },
-  {
-    date: "01. März 2025",
-    title: "Fasching Schalding rechts der Donau",
-    location: "Schalding r.d.D.",
-    description:
-      "Musikalische Begleitung der Faschingsfeier ab ca. 19 Uhr im Pfarrsaal Schalding r.d.D.",
-    id: 2,
-  },
-  {
-    date: "02. März 2025",
-    title: "Faschingsgottesdienst Neustift",
-    location: "Neustift-Passau",
-    description:
-      "Rhytmischer Gottesdienst ab 9:15 Uhr in der Kirche Neustift mit Unterstützung unserer kompletten Rhytmusgruppe.",
-    id: 3,
-  },
-  {
-    date: "04. März 2025",
-    title: "Faschingszug Innstadt Passau Gaudiwurm",
-    location: "Innstadt Passau",
-    description:
-      "Mitwirken im Faschingszug der Faschingsfreunde Innstadt Passau ab ca 12 Uhr Mittag.",
-    id: 4,
-  },
-  {
-    date: "22. März 2025",
-    title: "Starkbierfest Schalding r.d.D.",
-    location: "Schalding r.d.D.",
-    description:
-      "Musikalische Begleitung des Starkbierfestes Schalding r.d.D. im Pfaarsaal",
-    id: 5,
-  },
-  {
     date: "05. April 2025",
     title: "SV Schalding-Heining vs. 1860 München II",
     location: "Sportplatz des SV Schalding am Reuthinger Weg",
