@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import useSWR from "swr";
 import { GigCard } from "./GigsCard";
+import KonzertmeisterIframe from "../KonzertmeisterIFrame";
 
 type Gig = {
   id: number;
@@ -54,7 +55,8 @@ export function Gigs() {
       }}
       className="GigPage"
     >
-      <h1
+      <KonzertmeisterIframe />
+      {/* <h1
         style={{ fontSize: "2rem", fontWeight: "bold", marginBottom: "2rem" }}
       >
         Alle Termine
@@ -80,7 +82,7 @@ export function Gigs() {
             <GigCard {...gig} date={formatDate(gig.date)} />
           </motion.div>
         ))}
-      </div>
+      </div> */}
     </Container>
   );
 }
