@@ -69,7 +69,7 @@ export function Home() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            Boarisch, Rock-Klassiker & Party-Hits
+            Rock Meets Blasmusik
           </motion.h1>
           <div>
             <p>

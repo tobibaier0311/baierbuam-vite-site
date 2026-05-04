@@ -5,6 +5,7 @@ import {
   Collapse,
   Divider,
   IconButton,
+  Typography,
 } from "@mui/material";
 import "./GigsCard.css";
 import { ExpandLess, ExpandMore } from "@mui/icons-material";
@@ -23,7 +24,6 @@ export const GigCard = ({
   title,
   location,
   description,
-  id,
 }: GigCardProps) => {
   const [more, setMore] = useState(false);
 
@@ -33,6 +33,7 @@ export const GigCard = ({
 
   return (
     <Card variant="outlined" className="card">
+      <Typography>{date}</Typography>
       <CardHeader
         sx={description ? { cursor: "pointer" } : null}
         onClick={description && (() => handleMore())}
@@ -44,7 +45,7 @@ export const GigCard = ({
           )
         }
         title={title}
-        subheader={`${date}, ${location}`}
+        subheader={location}
       />
 
       {description && (
