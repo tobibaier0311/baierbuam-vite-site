@@ -69,7 +69,7 @@ export function Home() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            Boarisch, Rock-Klassiker & Party-Hits
+            Rock Meets Blasmusik
           </motion.h1>
           <div>
             <p>
@@ -96,10 +96,11 @@ export function Home() {
           <PrimaryButton label="Interesse?" link="/contact" />
         </motion.div>
       </div>
+      {/* 
       <Container className="gig-container-start">
         <h1>Unsere nächsten Auftritte</h1>
         <StartGigs />
-      </Container>
+      </Container>*/}
     </div>
   );
 }
