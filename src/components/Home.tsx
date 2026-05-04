@@ -69,7 +69,7 @@ export function Home() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            Rock Meets Blasmusik
+            Blech trifft auf Bass auf E-Gitarre
           </motion.h1>
           <div>
             <p>
