@@ -96,10 +96,12 @@ export function Home() {
           <PrimaryButton label="Interesse?" link="/contact" />
         </motion.div>
       </div>
-      <Container className="gig-container-start">
+      {/*
+     <Container className="gig-container-start">
         <h1>Unsere nächsten Auftritte</h1>
         <StartGigs />
       </Container>
+     */}
     </div>
   );
 }
